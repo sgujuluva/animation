@@ -33,6 +33,9 @@ transform: rotate(-45deg) translate(0,0.5rem);
     transform: rotate(45deg) translate(-0.7rem,-1.2rem);
 }
 /* minus shape */
+.minus
+{background-color: bisque;
+}
 .minus:hover div:nth-child(1),.minus:hover div:nth-child(3){
     display:none;
 }
@@ -40,19 +43,32 @@ transform: rotate(-45deg) translate(0,0.5rem);
     display:block;
 }
 /* right arrow */
+.rightarrow
+{background-color: rgb(230, 152, 57);
+}
 .rightarrow:hover div:nth-child(1){
-transform:rotate(30deg)  translate(0.9rem,0.3rem) ;
+transform:rotate(30deg)  translate(1.1rem,0.3rem) ;
     width:1.5rem;
 }
 .rightarrow:hover div:nth-child(2){
     display:block;
 }
 .rightarrow:hover div:nth-child(3){
-    transform:rotate(-30deg)  translate(0.9rem,-0.3rem) ;
+    transform:rotate(-30deg)  translate(1.1rem,-0.3rem) ;
     width:1.5rem;
 }
 /* left arrow */
+.leftarrow
+{background-color:rgb(160, 235, 210);
+}
 .leftarrow:hover div:nth-child(1){
-    transform:rotate(-30deg)  translate(-0.9rem,0.3rem) ;
+    transform:rotate(-30deg)  translate(-1.1rem,0.5rem) ;
         width:1.5rem;
+    }
+    .leftarrow:hover div:nth-child(2){
+        display:block;
+    }
+    .leftarrow:hover div:nth-child(3){
+        width:1.5rem;
+        transform:rotate(30deg)  translate(-1.1rem,-0.4rem);
     }
