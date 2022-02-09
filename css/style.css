@@ -8,8 +8,8 @@ body{
     height:100vh;
 }
 .hamburger{
-    width:10rem;
-    height:10rem;
+    width:5rem;
+    height:5rem;
     border-radius: 70%;
     background-color:rgb(166, 201, 221);
     display:flex;
@@ -18,7 +18,7 @@ body{
     align-items: center;
 }
 .hamburger div{
-    width:5rem;
+    width:2.5rem;
     height:0.35rem;
     background-color: black;
 }
@@ -30,7 +30,7 @@ transform: rotate(-45deg) translate(0,0.5rem);
     display:none;
 }
 .hamburger:hover div:nth-child(3){
-    transform: rotate(45deg) translate(-1.7rem,-2.5rem);
+    transform: rotate(45deg) translate(-0.7rem,-1.2rem);
 }
 /* minus shape */
 .minus:hover div:nth-child(1),.minus:hover div:nth-child(3){
@@ -39,3 +39,20 @@ transform: rotate(-45deg) translate(0,0.5rem);
 .minus:hover div:nth-child(2){
     display:block;
 }
+/* right arrow */
+.rightarrow:hover div:nth-child(1){
+transform:rotate(30deg)  translate(0.9rem,0.3rem) ;
+    width:1.5rem;
+}
+.rightarrow:hover div:nth-child(2){
+    display:block;
+}
+.rightarrow:hover div:nth-child(3){
+    transform:rotate(-30deg)  translate(0.9rem,-0.3rem) ;
+    width:1.5rem;
+}
+/* left arrow */
+.leftarrow:hover div:nth-child(1){
+    transform:rotate(-30deg)  translate(-0.9rem,0.3rem) ;
+        width:1.5rem;
+    }
