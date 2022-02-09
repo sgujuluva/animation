@@ -178,31 +178,18 @@ body{
  
     position: relative;
     } */
-.fancy:hover div:nth-child(1){
-    transform:rotate(0deg)  translate(1opx,10px) ;
-     /* transform-origin: top left;
-     position:absolute;
-     width:1.5rem;
-     top:20%;
-     left:13%;
-     transform:translatey(10px); */
-    }
-.fancy:hover div:nth-child(2){
-    transform:rotate(0deg)  translate(1opx,10px) ;
-    /* position:absolute;
-      top:50%;
-      left:25%;
-      width:2.3rem;
-      transform:translateY(-50%) ; */
-    }
-.fancy:hover div:nth-child(3){
-    transform:rotate(0deg)  translate(1opx,10px) ;
-    /* position:absolute;
-    right:19%;
-    bottom:15%;
-    width:1.5rem;
-    transform:translatey(-12px); */
-    }
+.fancy div:nth-child(1){
+    transform:rotate(0deg) translate(-2px,16px);
+    width:1rem;
+         }
+.fancy div:nth-child(2){
+    transform:rotate(0deg)  translate(10px,10px) ;
+    width:2.3rem;
+       }
+.fancy div:nth-child(3){
+    transform: rotate(0deg) translate(21px,4px);
+    width:1rem;
+       }
 /* triangle */
 .triangle
     {
