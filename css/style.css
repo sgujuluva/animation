@@ -1,3 +1,4 @@
+@import url("./shapes.css");
 *{
     margin:0;
     padding:0;
@@ -6,12 +7,18 @@
 body{
     width:100vw;
     height:100vh;
+    background-color: grey;
+}
+.shapes-container{
+    display:flex;
+    justify-content: space-evenly;
+   align-items: center;
 }
 .hamburger{
-    width:5rem;
+    width:6rem;
     height:5rem;
     border-radius: 70%;
-    background-color:rgb(166, 201, 221);
+    background-color:rgb(199, 154, 224);
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -23,28 +30,44 @@ body{
     background-color: black;
 }
 /* x shape */
-.hamburger:hover div:nth-child(1){
-transform: rotate(-45deg) translate(0,0.5rem);
+.xshape:hover div:nth-child(1){
+    transform: rotate(-45deg) translate(0,0.5rem);
+    }
+    .xshape:hover div:nth-child(2){
+        display:none;
+    }
+    .xshape:hover div:nth-child(3){
+        transform: rotate(45deg) translate(-0.7rem,-1.2rem);
+    }
+    /* minus shape */
+    .minus
+    {background-color: bisque;
+    }
+    .minus:hover div:nth-child(1),.minus:hover div:nth-child(3){
+        display:none;
+    }
+    .minus:hover div:nth-child(2){
+        display:block;
+    }
+     /* plus shape */
+.plus{
+    background-color:rgb(233, 181, 238);
 }
-.hamburger:hover div:nth-child(2){
-    display:none;
+.plus:hover div:nth-child(1){
+    transform: rotate(90deg) translate(0.4rem,0.1rem);
 }
-.hamburger:hover div:nth-child(3){
-    transform: rotate(45deg) translate(-0.7rem,-1.2rem);
-}
-/* minus shape */
-.minus
-{background-color: bisque;
-}
-.minus:hover div:nth-child(1),.minus:hover div:nth-child(3){
-    display:none;
-}
-.minus:hover div:nth-child(2){
+.plus:hover div:nth-child(2){
     display:block;
+    transform:translate(0,-1.1rem);
 }
+.plus:hover div:nth-child(3){
+    display:none;
+}
+
+
 /* right arrow */
-.rightarrow
-{background-color: rgb(230, 152, 57);
+.rightarrow{
+    background-color: rgb(230, 152, 57);
 }
 .rightarrow:hover div:nth-child(1){
 transform:rotate(30deg)  translate(1.1rem,0.3rem) ;
@@ -72,56 +95,10 @@ transform:rotate(30deg)  translate(1.1rem,0.3rem) ;
         width:1.5rem;
         transform:rotate(30deg)  translate(-1.1rem,-0.4rem);
     }
-    /* plus shape */
- .plus{
-    background-color:rgb(233, 181, 238);
-}
-.plus:hover div:nth-child(1){
-    transform: rotate(90deg) translate(0.4rem,0.1rem);
-}
-.plus:hover div:nth-child(2){
-    display:block;
-    transform:translate(0,-1.1rem);
-}
-.plus:hover div:nth-child(3){
-    display:none;
-}
-/* plus shape animation */
-/* .plusanimation{
-    background-color: darkolivegreen;
-   
-}
-.plusanimation:hover div:nth-child(3){
-   display:none;
-    animation-name: move;
-    animation-duration: 2s;
-    animation-delay: 5s;
-}
-@keyframes move {
-    from{
-    height:0;
-    }
-    to{
-        height:30vh; 
-    } 
-}*/
-/* fancy button */
+  /* fancy button */
 .fancy{
     background-color: darksalmon;
-    width:5rem;
-    height:5rem;
-    border-radius: 70%;
-    background-color:rgb(166, 201, 221);
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
     position: relative;
-    }
-    .fancy div{
-        width:2.5rem;
-        height:0.35rem;
-        background-color: black;  
     }
 .fancy:hover div:nth-child(1){
      transform-origin: top left;
@@ -144,4 +121,20 @@ transform:rotate(30deg)  translate(1.1rem,0.3rem) ;
     bottom:15%;
     width:1.5rem;
     transform:translatey(-12px);
+    }
+/* triangle */
+.triangle
+{background-color:rgb(228, 226, 99);
+}
+.triangle:hover div:nth-child(1){
+    transform:rotate(-45deg)  translate(-1.4rem,-0.1rem);
+    
+    }
+    .triangle:hover div:nth-child(2){
+        transform:rotate(45deg) translate(0.1rem,-0.8rem);
+        width:2.5rem;
+    }
+    .triangle:hover div:nth-child(3){
+    transform:translate(-0.3rem,-0.7rem);
+    width:3.5rem;
     }
