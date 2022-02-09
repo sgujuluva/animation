@@ -178,15 +178,15 @@ body{
  
     position: relative;
     } */
-.fancy div:nth-child(1){
+.fancy:hover div:nth-child(1){
     transform:rotate(0deg) translate(-2px,16px);
     width:1rem;
          }
-.fancy div:nth-child(2){
+.fancy:hover  div:nth-child(2){
     transform:rotate(0deg)  translate(10px,10px) ;
     width:2.3rem;
        }
-.fancy div:nth-child(3){
+.fancy:hover  div:nth-child(3){
     transform: rotate(0deg) translate(21px,4px);
     width:1rem;
        }
@@ -207,16 +207,16 @@ body{
     height:0.2rem;
     background-color: black;
 }
-.triangle div:nth-child(1){
-    transform:rotate(0deg)  translate(1opx,10px) ;
+.triangle:hover div:nth-child(1){
+    transform:rotate(45deg) translate(31px,-1px);
     
     }
-    .triangle div:nth-child(2){
-        transform:rotate(0deg)  translate(1opx,10px) ;
+    .triangle:hover div:nth-child(2){
+        transform:rotate(-45deg) translate(-9px,4px);
         width:2.5rem;
     }
-    .triangle div:nth-child(3){
-        transform:rotate(0deg)  translate(1opx,10px) ;
+    .triangle:hover div:nth-child(3){
+        transform:rotate(0deg)  translate(10px,10px) ;
     width:3.5rem;
     }
     /* square */
@@ -269,4 +269,55 @@ body{
         animation-duration:  2s;
             transform: rotate(0deg) translate(6px,-1px);
         }
+        /* rectangle */
+        .rectangle{
+            width:5rem;
+            height:3rem;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            
+        }
+        @keyframes change {
+            0%{
+                opacity:0.5;
+            }
+            50%{
+                opacity:0.2;
+            }
+            100%{
+                opacity:1;
+            }
+        }
+        .rectangle div{
+            width:4rem;
+            height:0.3rem;
+            background-color: black;
+            transition: 0.5s ;
+        }
         
+        .rectangle div:nth-child(1){
+            animation-name: change;
+            animation-duration: 2s;
+            transform:rotate(0deg)  translate(10px,10px);            
+            }
+            .rectangle div:nth-child(2){
+                animation-name: change;
+            animation-duration:  2s;
+            transform:rotate(90deg) translate(16px,20px);
+                width:2.2rem;
+            }
+            .rectangle div:nth-child(3){
+                animation-name: change;
+            animation-duration:  2s;
+            transform:rotate(90deg) translate(3px,-40px);
+            width:2.2rem;
+            }
+            .rectangle div:nth-child(4){
+                animation-name: change;
+            animation-duration:  2s;
+            transform:rotate(0deg)  translate(10px,10px);
+               
+            }
