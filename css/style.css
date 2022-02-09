@@ -73,33 +73,58 @@ body{
         display:none;
     }
      /* plus shape */
-.plus{opacity:1;
-    
+.plus
+    {
+        width:6rem;
+        height:3rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transition:0.5s;
+       
+}
+.plus div{
+    width:2.5rem;
+    height:0.2rem;
+    background-color: black;
 }
 .plus:hover div:nth-child(1){
-    transform: rotate(90deg) translate(0.4rem,0.1rem);
+    transform: rotate(0deg) translate(10px,10px);
 }
 .plus:hover div:nth-child(2){
-    display:block;
-    transform:translate(0,-1.1rem);
+    transform:rotate(90deg) translate(-7px,-8px);
 }
-.plus:hover div:nth-child(3){
+.plus:hover:hover div:nth-child(3){
     display:none;
 }
 
 
 /* right arrow */
-.rightarrow{
-    
+.rightarrow
+    {
+        width:6rem;
+        height:3rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transition:0.5s;
+      
 }
-.rightarrow:hover div:nth-child(1){
+.rightarrow div{
+    width:2.5rem;
+    height:0.2rem;
+    background-color: black;
+}
+.rightarrow div:nth-child(1){
 transform:rotate(30deg)  translate(1.1rem,0.3rem) ;
     width:1.5rem;
 }
-.rightarrow:hover div:nth-child(2){
+.rightarrow div:nth-child(2){
     display:block;
 }
-.rightarrow:hover div:nth-child(3){
+.rightarrow div:nth-child(3){
     transform:rotate(-30deg)  translate(1.1rem,-0.3rem) ;
     width:1.5rem;
 }
